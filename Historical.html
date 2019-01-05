@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<header>
+    <h1>New England Attractions
+    <img src="static/GroupProjectLogo2.png" alt="Group Logo" id = "logo">
+    </h1>
+</header>
+    <nav>
+        <span class = "navButton" class = "active"><a href="Home" class="navlinks">Home</a></span>
+        <span class = "navButton"><a href="Historical" class="navlinks">Historical</a></span>
+        <span class = "navButton"><a href="Cultural" class="navlinks">Cultural</a></span>
+        <span class = "navButton"><a href="Sports" class="navlinks">Sports</a></span>
+        <span class = "navButton"><a href="Educational"class="navlinks" >Education</a></span>
+        <span class = "navButton"><a href="Tourism" class="navlinks">Tourism</a></span>
+        <span id = "lastNav"  class = "navButton"><a href="Contact" class="navlinks">Contact</a></span>
+    </nav>
+    <body>
+	<form action='/historicalForm' method='POST' target = "_blank">
+		
+			<h1><marquee behavior ="scroll" direction="left" scrollamount="15">Historical Locals of New England</marquee></h1>
+			
+			<h2 class = "historicalTitle">Connecticut</h2>
+			<h3 class = "historicalSubTitle">Noah Webster House</h3>
+			<figure>
+				<img src = "static/noahWebster.jpg" alt = "Noah Webster House" class = "historicalImages" height = "300px" width = "500px">
+				<figcaption>Noah Webster House</figcaption>
+			</figure>
+		<div class = "historicalBlockInfo">
+			<span> <b>Open:</b> Mon-Fri from 1:00pm - 4:00pm</span> <span style = "margin-left: 8%;"><b>Location:</b> West Hartford, Connecticut</span><br><span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $7.00</span>
+			<span><b>Child Ticket Price:</b> $5.00</span>		
+			<!--Begin Noah Webster Adult Ticket Section -->
+			<br>
+			<br>
+			
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "websterAdult" name = "adultNumber" class="dropbtn" onchange = "updateWebsterAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultWebsterPrice" class = "inputField" name="adultPrice" value = "0.00" step = "0.01" min = "0.00" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Noah Webster Adult Ticket Section -->
+			
+			<!--Begin Noah Webster Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "websterChild" name = "childNumber" class="dropbtn" onchange = "updateWebsterChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childWebsterPrice" class = "inputField" name="childPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Noah Webster Child Ticket Section -->
+			 
+			<!--Begin Noah Webster Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" name="total" id = "totalWebsterPrice" class = "inputField" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "websterCredit" class = "inputField" pattern=".{16,}" maxlength = "16"  onkeyup = "limitWebster();"  placeholder="Please enter numbers only" title ="ERROR! Please enter 16 digit Credit Card Number!"  required>
+			</span>
+			<br>
+			<!--End Noah Webster Credit Card Section --> 
+			
+			<p> Noah Webster is well known for creating <i>A Grammatical Institute of the English Language</i>, which was nicknamed the “Blue-Backed Speller” for the blue binding it was typically sold in. The “Blue-Backed Speller” was made by Webster as a way to teach the new vocabulary and way of speaking developed by colonists (an Americanized type of English), instead of the British way (British English) of speaking and terms they were so used to pre Revolution This place was the birthplace of said founding father and where he spent most of his childhood growing up. Although Noah Webster has passed, his dedication to the English language has been passed down generations later to the poets who come to his house during occasional poetry reading events hosted there. There poets portray their thoughts, feelings and beliefs in using the very language Webster has helped developed.</p>
+			<input type="submit" id = "websterSubmit" value="Submit" style = "padding: 7px; font-weight:bold;" onclick = "websterSubmission();">
+		</div>
+		<input type = "hidden" name = "site" value = "Noah Webster House" >
+	</form>
+	
+	
+	<form action='/historicalForm' method='POST' target = "_blank">
+			<h2 class = "historicalTitle">Maine</h2>
+				<h3 class = "historicalSubTitle">Sabbathday Lake Shaker Village</h3> 
+				<figure>
+					<img src = "static/shakerVillage.jpg" alt="Sabbathday Lake Shaker Village" class = "historicalImages" height = "300px" width = "500px">
+					<figcaption>Sabbathday Lake Shaker Village</figcaption>
+				</figure>
+		<div class = "historicalBlockInfo">
+				<span> <b>Open:</b> Mon - Sat from 10:30am - 4:30pm, Sun from 10:00am - 11:00am</span><span style = "margin-left: 8%;"><b>Location:</b>New Gloucester, Maine</span><br><span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $10.00</span>
+			<span><b>Child Ticket Price:</b> $2.00</span>		
+			<!--Begin Shaker Village Adult Ticket Section -->	
+			<br>
+			<br>
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "shakerAdult" name = "adultNumber" class="dropbtn" onchange = "updateShakerAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultShakerPrice" class = "inputField" value = "0.00" step = "0.01" min = "0.00" name = "adultPrice" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Shaker Village Adult Ticket Section -->	
+				
+				<!--Begin Shaker Village Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "shakerChild" class="dropbtn" name = "childNumber" onchange = "updateShakerChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childShakerPrice" class = "inputField" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" name = "childPrice" readonly></span>
+			</span>
+			<!--End Shaker Village Child Ticket Section -->
+			 
+			<!--Begin Shaker Village Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" id = "totalShakerPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" name  = "total" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "shakerCredit" class = "inputField" pattern=".{16,}" maxlength = "16" onkeyup = "limitShaker();" pattern=".{16,}" title ="ERROR! Please enter 16 digit Credit Card Number!" required>
+			</span>
+			<br>
+			<!--End Shaker Village Credit Card Section --> 
+			<p>This village was founded by Shakers in 1782. Shakers were had left England in search of religious freedom just like the Pilgrims.
+			Now home to the last active Shaker group, one should take the time to visit and experience their culture and 
+			learn their beliefs from active Shakers while they still can.</p>
+			<input type="submit" id = "shakerSubmit" onclick = "shakerSubmission()" value="Submit" style = "padding: 7px; font-weight:bold;">
+		</div>
+		<input type = "hidden" name = "site" value = "Shaker Village" >
+	</form>
+	
+	
+	<form action='/historicalForm' method='POST' target = "_blank">	
+			<h2 class = "historicalTitle">New Hampshire</h2>
+				<h3 class = "historicalSubTitle">John Paul Jones House</h3>
+				<figure>
+					<img src="static/johnpauljones.jpg" alt="John Paul Jones House" class = "historicalImages"height = "300px" width = "500px">
+					<figcaption>John Paul Jones House</figcaption>
+				</figure>
+		<div class = "historicalBlockInfo">
+			<span> <b>Open:</b> Mon - Sun from 11:00am - 4:30pm</span> <span style = "margin-left: 8%;"><b>Location:</b>Portsmouth, New Hampshire</span><br> <span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $6.00</span>
+			<span><b>Child Ticket Price:</b> Free</span>		
+			<!--Begin John Paul Jones House Adult Ticket Section -->	
+			<br>
+			<br>
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "jonesAdult" class="dropbtn" name = "adultNumber" onchange = "updateJonesAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultJonesPrice" class = "inputField" name="adultPrice" value = "0.00" step = "0.01" min = "0.00" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End John Paul Jones House Adult Ticket Section -->	
+				
+			<!--Begin John Paul Jones House Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "jonesChild" name = "childNumber" class="dropbtn" onchange = "updateJonesChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childJonesPrice" class = "inputField" name="childPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly></span>			
+			</span>
+			<!--End John Paul Jones House Child Ticket Section -->
+			
+			<!--Begin John Paul Jones House Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" name="total" id = "totalJonesPrice" class = "inputField" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "jonesCredit" class = "inputField" pattern = ".{16,}" maxlength = "16" onkeyup = "limitJones();" title ="ERROR! Please enter 16 digit Credit Card Number!" required>
+			</span>
+			<br>
+			<!--End John Paul Jones House Credit Card Section --> 
+				<p>John Paul Jones was a Revolutionary War hero.
+				Originally born in Scotland, John Paul Jones eventually  made way to America where he joined the 
+				Continental Army during the outbreak of the Revolutionary War. It was the year 1779 when he was placed in 
+				charge the ship the <i>Bonhomme Richard</i> along with 4 small ships. It was while he and his crew were sailing around 
+				the British Isles when he and his crew were met by 2 much more powerful British ships, the <i>Serapis</i> and 
+				<i>Countess of Scarborough</i>. Despite being out matched, when asked by the British to surrender he shouted
+				“I have not yet begun to fight!” Against the odds he managed to capture both ships making him a navy hero, 
+				although lost the <i>Bonhomme Richard</i> during the fight. It was at this house said naval hero had stayed in 1777.</p>
+				<input type="submit" id = "jonesSubmit" onclick = "jonesSubmission()" value="Submit" style = "padding: 7px; font-weight:bold;">
+		</div>
+		<input type = "hidden" name = "site" value = "John Paul Jones House" >
+	</form>
+	<form action='/historicalForm' method='POST' target = "_blank">
+			<h2 class = "historicalTitle">Massachusetts</h2>
+				<h3 class = "historicalSubTitle">Plimoth Plantation</h3>
+				<figure>
+					<img src="static/plimothPlantation.jpg" alt="Plimoth Plantation" class = "historicalImages" height = "300px" width = "500px">
+					<figcaption>Plimoth Plantation</figcaption>
+				</figure>
+		<div class = "historicalBlockInfo">
+				<span> <b>Open:</b> Mon - Sun from 9:00am - 5:00pm</span> <span style = "margin-left: 8%;"><b>Location:</b>Plymouth, Massachusetts</span><br><span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $28.00</span>
+			<span><b>Child Ticket Price:</b> $16.00</span>		
+				
+				<!--Begin Plimoth Plantation Adult Ticket Section -->	
+			<br>
+			<br>
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "plimothAdult" name = "adultNumber" class="dropbtn" onchange = "updatePlimothAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultPlimothPrice" class = "inputField" name="adultPrice" value = "0.00" step = "0.01" min = "0.00" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Plimoth Plantation Adult Ticket Section -->	
+			
+			<!--Begin Plimoth Plantation Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "plimothChild" name = "childPrice" class="dropbtn" onchange = "updatePlimothChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childPlimothPrice" class = "inputField" name="childPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly></span>			
+			</span>
+			<!--End Plimoth Plantation Child Ticket Section -->
+			
+			<!--Begin Plimoth Plantation Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" name="total" id = "totalPlimothPrice" class = "inputField" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "plimothCredit" class = "inputField" pattern=".{16,}" maxlength = "16" onkeyup = "limitPlimoth();" title ="ERROR! Please enter 16 digit Credit Card Number!" required>
+			</span>
+			<br>
+			<!--End Plimoth Plantation Credit Card Section --> 
+			<p>Plimoth Plantation is a living history museum that shows how life was like in the Plymouth Colony centuries ago. Plymouth Colony was a colony made by a group of people known as Pilgrims. Pilgrims were people who were seeking religious freedom from the Church of England, thus set sail for America on the Mayflower. 
+			What makes the Plimoth Plantation unique is it not only shows how life was like from the perspective of just the Pilgrims, but also from the Native American’s perspective too, whom they had several conflicts with while trying to settle there.
+			When coming to Massachusetts one should definitely stop by Plimoth Plantation because it’s not often you get to experience both sides of history. 
+			</p>
+			<input type="submit" id = "plimothSubmit" onclick = "plimothSubmission()" value="Submit" style = "padding: 7px; font-weight:bold;">
+		</div>
+		<input type = "hidden" name = "site" value = "Plimoth Plantation">
+	</form>
+	<form action='/historicalForm' method='POST' target = "_blank">
+	
+				<h3 class = "historicalSubTitle">Paul Revere House</h3>
+				<figure>
+					<img src="static/revereHouse.jpg" alt="Paul Revere House" class = "historicalImages" height = "300px" width = "500px">
+					<figcaption>Paul Revere House</figcaption>
+				</figure>
+		<div class = "historicalBlockInfo">
+			<span> <b>Open:</b> Mon - Sun from 9:30am - 4:15pm</span> <span style = "margin-left: 8%;"><b>Location:</b>Boston, Massachusetts</span><br><span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $6.00</span>
+			<span><b>Child Ticket Price:</b> Free</span>		
+			<!--Begin Paul Revere House Adult Ticket Section -->	
+			<br>
+			<br>
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "revereAdult" name = "adultNumber" class="dropbtn" onchange = "updateRevereAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultReverePrice" class = "inputField" name="adultPrice" value = "0.00" step = "0.01" min = "0.00" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Paul Revere House Adult Ticket Section -->	
+			
+			<!--Begin Paul Revere House Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "revereChild" name = "childNumber" class="dropbtn" onchange = "updateRevereChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childReverePrice" class = "inputField" name="childPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly></span>			
+			</span>
+			<!--End Paul Revere House Ticket Section -->
+			
+			<!--Begin Paul Revere House Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" name="total" id = "totalReverePrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "revereCredit" class = "inputField" pattern=".{16,}" maxlength = "16" onkeyup = "limitRevere();" title ="ERROR! Please enter 16 digit Credit Card Number!" required>
+			</span>
+			<br>
+			<!--End Paul Revere House Credit Card Section --> 
+				<p>It was the year 1770 when Paul Revere moved in with his family consisting  of his wife Sarah, mother Deborah, and his 5 children. Together Revere and his family would stay until the year 1800. It was during this time that Paul Revere would join 50 other Patriots in protest of British taxation of the colonist without American representation in British Parliament by dumping British tea in Boston Harbor. This event would later be known as the Boston Tea Party. Though he participated in such a famous event, Paul Revere is even  more well known for his famous ride on April 16, 1775 during which he rode with William Dawes to warn Patriot leaders Samuel Adams and John Hancock hiding in Lexington, Massachussetts, of the plans of the British army to to capture them and their weapon supply hidden in Concord, Massachusetts. Why not come to Massachusetts to view the home of a Patriot war hero who made such a great contribution that lead the United States to it's victory in the Revolutionary War.</p>
+				<input type="submit" id = "revereSubmit" onclick = "revereSubmission()" value="Submit" style = "padding: 7px; font-weight:bold;">
+		</div>
+		<input type = "hidden" name = "site" value = "Paul Revere House" >
+	</form>
+	<form action='/historicalForm' method='POST' target = "_blank">		
+			<h2 class = "historicalTitle">Vermont</h2>
+				<h3 class = "historicalSubTitle">Bennington Monument</h3>
+				<figure>
+					<img src="static/benningtonMonument.jpg" alt="Bennington Monument" class = "historicalImages" height = "300px" width = "500px">
+					<figcaption>Bennington Monument</figcaption>
+				</figure>
+		<div class = "historicalBlockInfo">
+			<span> <b>Open:</b> Mon - Sun from 9:00am - 5:00pm</span> <span style = "margin-left: 8%;"><b>Location:</b>Bennington, Vermont</span><br><span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $5.00</span>
+			<span><b>Child Ticket Price:</b> $1.00</span>		
+			<!--Begin Bennington Monument Adult Ticket Section -->	
+			<br>
+			<br>
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "benningtonAdult" name = "adultNumber" class="dropbtn" onchange = "updateBenningtonAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultBenningtonPrice" class = "inputField" name="adultPrice" value = "0.00" step = "0.01" min = "0.00" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Bennington Monument Adult Ticket Section -->
+
+			<!--Begin Bennington Monument Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "benningtonChild" name = "childNumber" class="dropbtn" onchange = "updateBenningtonChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childBenningtonPrice" class = "inputField" name="childPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly></span>			
+			</span>
+			<!--End Bennington Monument Child Ticket Section -->
+
+			<!--Begin Bennington Monument Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" name="total" id = "totalBenningtonPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "benningtonCredit" class = "inputField" pattern=".{16,}" maxlength = "16" onkeyup = "limitBennington();" title ="ERROR! Please enter 16 digit Credit Card Number!" required>
+			</span>
+			<br>
+			<!--End Bennington Monumenent Credit Card Section --> 			
+				<p>Towering at 306 feet and 4.5 inches tall and composed of magnesian limestone, stands The Bennington Battle Monument. 
+				The monument was completed in the year 1891 in honor of the Battle of Bennington. The Battle of Bennington occurred on August 16th 1777 during the Revolutionary War when British General John Burgoyne attacked Bennington, Vermont in order to restock on supplies after running
+				low on them after a siege on American forts along Lake Champlain-Hudson River. 
+				Against a joint siege by British Army and its allies: Canadians, Indians, and Loyalist; 
+				the Patriots managed to pull a victory. This win would later prove significant in its impact when the win in Bennington helped the Patriots win the Battle of Saratoga and win the Revolutionary War.</p>
+				<input type="submit" id = "benningtonSubmit" onclick = "benningtonSubmission()" value="Submit" style = "padding: 7px; font-weight:bold;">
+		</div>
+		<input type = "hidden" name = "site" value = "Bennington Monumenent" >
+	</form>	
+	<form action='/historicalForm' method='POST' target = "_blank">
+			<h2 class = "historicalTitle">Rhode Island</h2>
+				<h3 class = "historicalSubTitle">Slater Mill</h3>
+				<figure>
+					<img src="static/slaterMill.jpg" alt="Slater Mill" class = "historicalImages" height = "300px" width = "500px">
+					<figcaption>Slater Mill</figcaption>
+				</figure>
+		<div class = "historicalBlockInfo">
+			<span> <b>Open:</b> Mon - Sun from 11:00am - 3:00pm</span> <span style = "margin-left: 8%;"><b>Location:</b>Pawtucket, Rhode Island</span><br><span style = "margin-right: 10.6%;"><b>Adult Ticket Price:</b> $12.00</span>
+			<span><b>Child Ticket Price:</b> $6.50</span>		
+			<!--Begin Slater Mill Adult Ticket Section -->	
+			<br>
+			<br>
+			<span style = "margin-right: 15%">
+			<div class="dropdown">
+				<select id = "slaterAdult" name = "adultNumber" class="dropbtn" onchange = "updateSlaterAdult();">
+					<option value="0">0 Adult Ticket(s)</option>
+					<option value="1">1 Adult Ticket(s)</option>
+					<option value="2">2 Adult Ticket(s)</option>
+					<option value="3">3 Adult Ticket(s)</option>
+					<option value="4">4 Adult Ticket(s)</option>
+					<option value="5">5 Adult Ticket(s)</option>
+					<option value="6">6 Adult Ticket(s)</option>
+					<option value="7">7 Adult Ticket(s)</option>
+					<option value="8">8 Adult Ticket(s)</option>
+					<option value="9">9 Adult Ticket(s)</option>
+					<option value="10">10 Adult Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "adultSlaterPrice" class = "inputField" name="adultPrice" value = "0.00" step = "0.01" min = "0.00" style = "background-color:rgb(220,220,220);" readonly></span>
+			</span>
+			<!--End Slater Mill Adult Ticket Section -->
+
+			<!--Begin Slater Mill Child Ticket Section -->
+			<span>
+			 <div class="dropdown" >
+				<select id = "slaterChild" name = "childNumber" class="dropbtn" onchange = "updateSlaterChild();">
+					<option value="0">0 Child Ticket(s)</option>
+					<option value="1">1 Child Ticket(s)</option>
+					<option value="2">2 Child Ticket(s)</option>
+					<option value="3">3 Child Ticket(s)</option>
+					<option value="4">4 Child Ticket(s)</option>
+					<option value="5">5 Child Ticket(s)</option>
+					<option value="6">6 Child Ticket(s)</option>
+					<option value="7">7 Child Ticket(s)</option>
+					<option value="8">8 Child Ticket(s)</option>
+					<option value="9">9 Child Ticket(s)</option>
+					<option value="10">10 Child Ticket(s)</option>
+				</select>
+			</div>
+			<span style = "margin-left: 20px;"><b>$</b><input type="number" id = "childSlaterPrice" class = "inputField" name="childPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly></span>			
+			</span>
+			<!--End Slater Mill Child Ticket Section -->
+
+			<!--Begin Slater Mill Credit Card Section -->
+			<br>
+			<span style = "margin-right: 15%" >
+				Total: $<input type="number" name="total" id = "totalSlaterPrice" value = "0.00" step = "0.01" style = "background-color:rgb(220,220,220);" readonly>
+			</span>
+			<span>
+				Credit Card Number: <input type="text" name="card" id = "slaterCredit" class = "inputField" pattern=".{16,}" maxlength = "16" onkeyup = "limitSlater();" title ="ERROR! Please enter 16 digit Credit Card Number!" required>
+			</span>
+			<br>
+			<!--End Slater Mill Credit Card Section --> 				
+				
+			<p>Slater Mill is known as the birthplace of the American Industrial Revolution. Founded by Samuel Slater and Moses Brown built Slater Mill in 1793. This mill would later become the first American factory to use water power to create cotton yarn successfully.</p>
+			<input type="submit" id = "slaterSubmit" onclick = "slaterSubmission()"  value="Submit" style = "padding: 7px; font-weight:bold;">
+		</div>
+		<input type = "hidden" name = "site" value = "Slater Mill" >
+	</form>
+	<script src  = "static/historicalForm.js"></script>
+    </body>
+   <footer style = "text-align:center">
+		<small>
+			Copyright &copy Isaac Moise, April McBroom, Nicholas Ciccio
+		</small>
+    </footer>
+</html>

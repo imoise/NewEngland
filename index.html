@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+	<div style = "display: flex; margin-left: 83%;">
+    <form id="logOut" action='/' method='GET'>
+		<input type ="submit" id='logout' value="Log out" 
+		style= "height: 70px; width: 90px; border-radius: 60px; border: 3px solid black; color: khaki; font-size: 18px; background-color: 	midnightblue; flex: 1;">
+    </form>  
+	<form id="cart" action='/shoppingCart' method='POST' target =" _blank"> 
+	
+	  <button type ="submit" id='logout' value="Shopping Cart"
+	  style= "height: 70px; width: 90px; border-radius: 60px; border: 3px solid black; background-color: 	midnightblue; flex: 1;">
+		 <img src="static/shoppingCart.jpg" style = "height:50px; width: 70px; border-radius: 60px; background-color: blue;" id="logout">
+	 </button>
+</div>
+	</form>
+   
+
+<header>
+     <h4 id="est">Eastern Standard Time (EST)</h4>
+    <!--Makes a div element for the EST clock-->
+	<br>
+    <div id="etime" class = "eclock" onload = "clock();"></div>
+<br>
+    <h4 id="pst">Pacific Standard Time (PST)</h4>
+    <!--Makes a div element for the PST clock-->
+	
+    <div id="ptime" class = "pclock" onload = "pacific();"></div>
+    <script src = "static/clock.js">       
+    </script>
+    <h1>New England Attractions
+    <img src="static/GroupProjectLogo2.png" alt="Group Logo" id = "logo">
+    </h1>
+</header>
+   <nav>
+        <span class = "navButton" class = "active"><a href="Home" class="navlinks">Home</a></span>
+        <span class = "navButton"><a href="Historical" class="navlinks">Historical</a></span>
+        <span class = "navButton"><a href="Cultural" class="navlinks">Cultural</a></span>
+        <span class = "navButton"><a href="Sports" class="navlinks">Sports</a></span>
+        <span class = "navButton"><a href="Educational"class="navlinks" >Education</a></span>
+        <span class = "navButton"><a href="Tourism" class="navlinks">Tourism</a></span>
+        <span id = "lastNav"  class = "navButton"><a href="Contact" class="navlinks">Contact</a></span>
+    </nav>
+    <body>
+		<h1><marquee behavior ="scroll" direction="left" scrollamount="15">Welcome To New England!</marquee></h1>
+        <img src="static/ne.png" id = "ne">
+        <br>
+
+		 <h1>Showcasing Since 1987</h1>
+        <div class="row">
+  <div class="align">
+  
+    <img class="imagepage" src="static/rocks.png" alt="Snow" style="width:100%" height = 300px; >
+  </div>
+  <div class="align">
+    <img class="imagepage" src=" static/fall.png" alt="Forest" style="width:100%" height = 300px;>
+  </div>
+  <div class="align">
+    <img class="imagepage" src="static/ocean.png" alt="Mountains" style="width:100%" height = 300px;>
+  </div>
+</div>
+      <div class="MainTitlePage">
+         <br>
+		 <br>
+		 <br>
+      </div>
+ 
+	</div>
+  </body>
+  <br>
+  <br>
+  <br>
+     <footer style="text-align:center">
+	 <small>
+    Copyright &copy; April Mcbroom, Isaac Moise, Nicholas Cicco
+	</small>
+    </footer>
+</html>

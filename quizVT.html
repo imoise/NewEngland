@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Vermont</title>
+	<meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<body>
+	<h1 class = "Title">Vermont Quiz</h1>
+	<div>
+		<p>
+			<b>How many state representatives does Vermont have?</b>
+		</p>
+		<input type='radio' id='rep1' name='VTN1' value='1 representatives' onclick = "vtAnswer1();"><label for = 'rep1'>1 representatives</label>
+		<br>
+		<input type='radio' id='rep2' name='VTN1' value='3 representatives' onclick = "vtAnswer1();"><label for = 'rep2'>3 representatives</label>
+		<br>
+		<input type='radio' id='rep3' name='VTN1' value='5 representatives' onclick = "vtAnswer1();"><label for = 'rep3'>5 representatives</label>
+		<div id = 'vtNotice1' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	
+	<div>
+		<p>
+			<b>Which of the following is the Vermont state gemstone?</b>
+		</p>
+		<input type='radio' id='gem1' name='VTN2' value='Aquamarine' onclick = "vtAnswer2();"><label for = 'gem1'>Aquamarine</label>
+		<br>
+		<input type='radio' id='gem2' name='VTN2' value='Rhodochrosite' onclick = "vtAnswer2();"><label for = 'gem2'>Rhodochrosite</label>
+		<br>
+		<input type='radio' id='gem3' name='VTN2' value='Grossular Garnet' onclick = "vtAnswer2();"><label for = 'gem3'>Grossular Garnet</label>
+		<div id = 'vtNotice2' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<div>
+		<p>
+			<b>Which of the following is Vermont's state song?</b>
+		</p>
+		<input type='radio' id='song1' name='VTN3' value="I'm From Vermont" onclick = "vtAnswer3();"><label for = 'song1'>"I'm From Vermont"</label>
+		<br>
+		<input type='radio' id='song2' name='VTN3' value='These Green Mountains' onclick = "vtAnswer3();"><label for = 'song2'>"These Green Mountains"</label>
+		<br>
+		<input type='radio' id='song3' name='VTN3' value='Moonlight in Vermont' onclick = "vtAnswer3();"><label for = 'song3'>"Moonlight in Vermont"</label>
+		<div id = 'vtNotice3' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<script src = "static/quiz.js"> 
+	</script>	
+</body>
+</html> 

@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>New Hampshire Quiz</title>
+	<meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<body>
+	<h1 class = "Title">New Hampshire Quiz</h1>
+	<div>
+		<p>
+			<b>Which of the following is the New Hampshire State fruit?</b>
+		</p>
+		<input type='radio' id='fruit1' name='NHN1' value='Pumpkin' onclick = "nhAnswer1();"><label for = 'fruit1'>Pumpkin</label>
+		<br>
+		<input type='radio' id='fruit2' name='NHN1' value='Potato' onclick = "nhAnswer1();"><label for = 'fruit2'>Potato</label>
+		<br>
+		<input type='radio' id='fruit3' name='NHN1' value='Orange' onclick = "nhAnswer1();"><label for = 'fruit3'>Orange</label>
+		<div id = 'nhNotice1' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	
+	<div>
+		<p>
+			<b>Which flower is New Hampshire's state flower?</b>
+		</p>
+		<input type='radio' id='flower1' name='NHN2' value='Bur Marigold' onclick = "nhAnswer2();"><label for = 'flower1'>Bur Marigold</label>
+		<br>
+		<input type='radio' id='flower2' name='NHN2' value='White Avens' onclick = "nhAnswer2();"><label for = 'flower2'>White Avens</label>
+		<br>
+		<input type='radio' id='flower3' name='NHN2' value='Purple Lilac' onclick = "nhAnswer2();"><label for = 'flower3'>Purple Lilac</label>
+		<div id = 'nhNotice2' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<div>
+		<p>
+			<b>Which of the following people were one of New Hampshire's founders?</b>
+		</p>
+		<input type='radio' id='bird1' name='NHN3' value='John Mason' onclick = "nhAnswer3();"><label for = 'bird1'>John Mason</label>
+		<br>
+		<input type='radio' id='bird2' name='NHN3' value='Ted Gatsas' onclick = "nhAnswer3();"><label for = 'bird2'>Ted Gatsas</label>
+		<br>
+		<input type='radio' id='bird3' name='NHN3' value='Chris Sununu' onclick = "nhAnswer3();"><label for = 'bird3'>Chris Sununu</label>
+		<div id = 'nhNotice3' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<script src = "static/quiz.js"> 
+	</script>	
+</body>
+</html> 

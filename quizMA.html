@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Massachusetts Quiz</title>
+	<meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<body>
+	<h1 class = "Title">Massachusetts Quiz</h1>
+	<div>
+		<p>
+			<b>Which of the following is Massachusetts state insect?</b>
+		</p>
+		<input type='radio' id='insect1' name='MAN1' value='Abotts Sphinx Moth' onclick = "maAnswer1();"><label for = 'insect1'>Abott's Sphinx Moth</label>
+		<br>
+		<input type='radio' id='insect2' name='MAN1' value='Ladybug' onclick = "maAnswer1();"><label for = 'insect2'>Ladybug</label>
+		<br>
+		<input type='radio' id='insect3' name='MAN1' value='Acorn Weevil' onclick = "maAnswer1();"><label for = 'insect3'>Acorn Weevil</label>
+		<div id = 'maNotice1' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	
+	<div>
+		<p>
+			<b>Which president was born in Massachusetts?</b>
+		</p>
+		<input type='radio' id='president1' name='MAN2' value='George W. Bush' onclick = "maAnswer2();"><label for = 'president1'>George W. Bush</label>
+		<br>
+		<input type='radio' id='president2' name='MAN2' value='Franklin D. Roosevelt' onclick = "maAnswer2();"><label for = 'president2'>Franklin D. Roosevelt</label>
+		<br>
+		<input type='radio' id='president3' name='MAN2' value='John F. Kennedy' onclick = "maAnswer2();"><label for = 'president3'>John F. Kennedy</label>
+		<div id = 'maNotice2' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<div>
+		<p>
+			<b>What is the Massachusetts state nickname?</b>
+		</p>
+		<input type='radio' id='nickname1' name='MAN3' value='Upland Sandpiper' onclick = "maAnswer3();"><label for = 'nickname1'>Tea State</label>
+		<br>
+		<input type='radio' id='nickname2' name='MAN3' value='American Robin' onclick = "maAnswer3();"><label for = 'nickname2'>Bay State</label>
+		<br>
+		<input type='radio' id='nickname3' name='MAN3' value='Rock Pigeon' onclick = "maAnswer3();"><label for = 'nickname3'>Patriot State</label>
+		<div id = 'maNotice3' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<script src = "static/quiz.js"> 
+	</script>
+</body>
+</html> 

@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Rhode Island Quiz</title>
+	<meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<body>
+	<h1 class = "Title">Rhode Island Quiz</h1>
+	<div>
+		<p>
+			<b>Which of the following is the state motto of Rhode Island?</b>
+		</p>
+		<input type='radio' id='motto1' name='RIN1' value='Opportunity' onclick = "riAnswer1();"><label for = 'motto1'>Opportunity</label>
+		<br>
+		<input type='radio' id='motto2' name='RIN1' value='Dream' onclick = "riAnswer1();"><label for = 'motto2'>Dream</label>
+		<br>
+		<input type='radio' id='motto3' name='RIN1' value='Hope' onclick = "riAnswer1();"><label for = 'motto3'>Hope</label>
+		<div id = 'riNotice1' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	
+	<div>
+		<p>
+			<b>Which of the following is the Rhode Island State slogan?</b>
+		</p>
+		<input type='radio' id='slogan1' name='RIN2' value='Unwind' onclick = "riAnswer2();"><label for = 'slogan1'>Unwind</label>
+		<br>
+		<input type='radio' id='slogan2' name='RIN2' value='Rest' onclick = "riAnswer2();"><label for = 'slogan2'>Rest</label>
+		<br>
+		<input type='radio' id='slogan3' name='RIN2' value='Relax' onclick = "riAnswer2();"><label for = 'slogan3'>Relax</label>
+		<div id = 'riNotice2' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<div>
+		<p>
+			<b>Which of the following is the Rhode Island state drink?</b>
+		</p>
+		<input type='radio' id='drink1' name='RIN3' value='Beer' onclick = "riAnswer3();"><label for = 'drink1'>Beer</label>
+		<br>
+		<input type='radio' id='drink2' name='RIN3' value='Green Tea' onclick = "riAnswer3();"><label for = 'drink2'>Green Tea</label>
+		<br>
+		<input type='radio' id='drink3' name='RIN3' value='Coffee Milk' onclick = "riAnswer3();"><label for = 'drink3'>Coffee Milk</label>
+		<div id = 'riNotice3' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<script src = "static/quiz.js"> 
+	</script>	
+</body>
+</html> 

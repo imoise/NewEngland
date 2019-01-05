@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<header>
+    <h1>New England Attractions
+    <img src="static/GroupProjectLogo2.png" alt="Group Logo" id = "logo">
+    </h1>
+	
+	<style>
+		#signHeading{background-color:rgb(240,255,255);text-align:center; border: 6px solid gold; padding-top: 15px; padding-bottom: 15px; width: 60%; margin: 0 auto; border-radius: 30px;}
+		#SignUp{margin: 8%;}
+		body{background-color: lightblue;}
+		#signBox{padding: 25px;  margin-left: auto; margin-right: auto; width: 650px; height: 600px; border: 3px inset white; background-color:rgb(30,144,255, 0.3);}
+		#userName{padding: 7%; width: 200%; background-color: gainsboro;}
+		
+		#submitButton{margin-left: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; font-weight: bold; border: 3px solid black; background-color: rgb(167,141,0); border-radius: 8px; cursor: pointer;}
+		#submitButton:hover{background-color: rgb(255,223,0);}
+		
+		#registerButton{margin-left: 50%; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; font-weight: bold;; border: 3px solid black; background-color: rgb(167,141,0); border-radius: 8px; cursor: pointer;}
+		
+		#registerButton:hover{background-color: rgb(255,223,0);}
+		
+		#submitButton:active{background-color: rgb(137,111,0);  box-shadow: 0 5px #666;  transform: translateY(4px);}
+		#registerButton:active{background-color: rgb(137,111,0);  box-shadow: 0 5px #666;  transform: translateY(4px);}
+		#login{margin-left: auto;  margin-right: auto; width: 300px; height: 300px;  display: block; border: 5px inset black; background-color: white; padding: 10px;}
+	</style>
+</header>
+ <body>
+	<form id = 'SignUpR' action='/Registration' method='GET'></form>
+		<h2 id = 'signHeading'>New England Attractions Login</h2>
+	<form id= 'SignUp' action='/signUser' method='POST' >
+		<fieldset id = 'signBox'>
+             <img src="static/login.png" alt="login" id = "login">
+			 <br>
+		<div style = 'position: relative; margin-left: 25%; display: inline-block;'>
+			<label style = 'font-weight: bold; font-size: 18px;'>User Name</label>
+			<br>
+			<input type='text' id ='userName'  name = "user" form ='SignUp' placeholder='Enter User Name' title = "ERROR! Username must be 8-15 characters!" pattern='.{8,15}' required>
+		</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		<div style = 'position: relative; margin-left: 25%; display: inline-block;'>
+			<label style = 'font-weight: bold; font-size: 18px;'>Password</label>
+			<br>
+			<input type='password' id='password' name = "passwordS" form ='SignUp' placeholder='Enter Password' title = "ERROR! Password must be 8-15 characters!" style = 'padding: 7%; width: 200%; background-color: gainsboro;' pattern='.{8,15}' required>
+		</div>
+			<br>
+			<br>
+			<button id='submitButton' name = 'signSubmit' type='submit'>Submit</button>
+	
+			<button id='registerButton' form ='SignUpR' name = 'signRegister' type='submit'>Register</button>	
+			</fieldset>	
+			</form>
+</body>";

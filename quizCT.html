@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Connecticut Quiz</title>
+	<meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<body>
+	<h1 class = "Title">Connecticut Quiz</h1>
+	<div>
+		<p>
+			<b>Which of the following is the nickname for the State of Connecticut?</b>
+		</p>
+		<input type='radio' id='name1' name='CTN1' value='New England Chowder' onclick = "ctAnswer1();"><label for = 'name1'>New England Chowder</label>
+		<br>
+		<input type='radio' id='name2' name='CTN1' value='Patriots' onclick = "ctAnswer1();"><label for = 'name2'>Patriots</label>
+		<br>
+		<input type='radio' id='name3' name='CTN1' value='Nutmeg' onclick = "ctAnswer1();"><label for = 'name3'>Nutmeg</label>
+		<div id = 'ctNotice1' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	
+	<div>
+		<p>
+			<b>Which year was Connecticut founded?</b>
+		</p>
+		<input type='radio' id='year1' name='CTN2' value='1788' onclick = "ctAnswer2();"><label for = 'year1'>1788</label>
+		<br>
+		<input type='radio' id='year2' name='CTN2' value='1800' onclick = "ctAnswer2();"><label for = 'year2'>1800</label>
+		<br>
+		<input type='radio' id='year3' name='CTN2' value='1762' onclick = "ctAnswer2();"><label for = 'year3'>1762</label>
+		<div id = 'ctNotice2' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<div>
+		<p>
+			<b>Which bird is the Connecticut state bird?</b>
+		</p>
+		<input type='radio' id='bird1' name='CTN3' value='Upland Sandpiper' onclick = "ctAnswer3();"><label for = 'bird1'>Upland Sandpiper</label>
+		<br>
+		<input type='radio' id='bird2' name='CTN3' value='American Robin' onclick = "ctAnswer3();"><label for = 'bird2'>American Robin</label>
+		<br>
+		<input type='radio' id='bird3' name='CTN3' value='Rock Pigeon' onclick = "ctAnswer3();"><label for = 'bird3'>Rock Pigeon</label>
+		<div id = 'ctNotice3' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<script src = "static/quiz.js"> 
+	</script>	
+</body>
+</html> 

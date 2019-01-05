@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<header>
+    <h1>New England Attractions
+    <img src="static/GroupProjectLogo2.png" alt="Group Logo" id = "logo">
+    </h1>
+</header>
+<style>
+	#registerHeading{background-color: rgb(240,255,255);text-align:center; border: 6px solid gold; padding-top: 15px; padding-bottom: 15px; width: 60%; margin: 0 auto; border-radius: 30px;}
+	#registerUser{margin: 8%;}
+	body{background-color: lightblue;}
+	#registerBox{padding: 30px;  margin-left: auto; margin-right: auto; width: 50%; border: 3px inset white; background-color: dodgerblue;}
+	
+	#firstNameR{padding: 7%; width: 200%; background-color: gainsboro;}
+	#lastNameR{padding: 7%; width: 200%; background-color: gainsboro;}
+	#userNameR{padding: 7%; width: 200%; background-color: gainsboro;}
+	#emailR{padding: 7%; width: 200%; background-color: gainsboro;}
+	#passwordR{padding: 7%; width: 200%; background-color: gainsboro;} 
+	
+	#registerButtonR{margin-left: 70%; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; font-weight: bold;; border: 3px solid black; background-color: rgb(167,141,0); border-radius: 8px; cursor: pointer;}
+	#registerButtonR:active{background-color: rgb(137,111,0);  box-shadow: 0 5px #666;  transform: translateY(4px);}
+	#registerButtonR:hover{background-color: rgb(255,223,0);}
+	#login{margin-left: auto;  margin-right: auto; width: 300px; height: 300px;  display: block; border: 5px inset black; background-color: blue; padding: 10px; border-radius: 90px;}
+
+</style>
+<body>
+	<h2 id = 'registerHeading'>New England Attractions Account Registration</h2>
+	
+	<form id= 'registerUser' action='/registerUser' method='POST'>
+	<fieldset id = 'registerBox'>
+		<img src="static/avatar.png" alt="register" id = "login">
+		<div style = 'position: relative; margin-left: 5%; display: inline-block;'>
+		<label style = 'font-weight: bold; font-size: 18px;'>First Name</label>
+		<br>
+		<input type='text' id ='firstNameR' name = 'first'	placeholder='Enter First Name' pattern='.{3,10}' required>
+		</div>
+		<br>
+		<br>
+		
+		<div style = 'position: relative; margin-left: 5%; display: inline-block;'>
+			<label style = 'font-weight: bold; font-size: 18px;'>Last Name</label>
+			<br>
+			<input type='text' id ='lastNameR' name = 'last' placeholder='Enter Last Name' pattern='.{1,10}' required>
+		</div>
+		<br>
+		<br>
+		
+		<div style = 'position: relative; margin-left: 5%; display: inline-block;'>
+			<label style = 'font-weight: bold; font-size: 18px;'>User Name</label>
+			<br>
+			<input type='text' id ='userNameR' name = 'user' placeholder='Create User Name' pattern='.{8,15}' required>
+		</div>
+			<br>
+			<br>
+		<div style = 'position: relative; margin-left: 5%; display: inline-block;'>
+			<label style = 'font-weight: bold; font-size: 18px;'>Email</label>
+			<br>
+			<input type='text' id ='emailR' name = 'email' placeholder='Enter Email' pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,})' maxlength = "25" required>
+		</div>
+		<br>
+		<br>
+		
+		<div style = 'position: relative; margin-left: 5%; display: inline-block;'>
+			<label style = 'font-weight: bold; font-size: 18px;'>Password</label>
+			<br>
+			<input type='password' id='passwordR' name = 'password1' placeholder='Create Password' style = 'padding: 7%; width: 200%; background-color: gainsboro;' pattern='.{8,15}' required>
+		</div>
+		<br>
+		<br>
+		<button id='registerButtonR' type='submit'>Register</button>
+		
+	</fieldset>
+	</form>
+</body>
+	

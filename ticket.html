@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Your Order</title>
+<meta charset="UTF-8">  
+<link rel="stylesheet" type="text/css" href="ticket.css">
+</head>
+<body>
+    <h1>New England Attractions
+    <img src="GroupProjectLogo2.png" alt="Group Logo" id = "logo">
+    </h1>
+    <h2 id="order">Thank you for your order!</h2>
+    
+    <img src="ticket.gif" id="ticketgif" style="width:470px;height:420px;border:0;">
+<form id="ticketForm">
+ <fieldset id = "fieldset">
+  <legend>Your Order</legend>
+     Number of Adult Tickets: <input type="text" id="numAdult" class = "inputBox" name="adultTicket" readonly >
+     <span class= "priceField">
+     Adult Ticket Price: <input type="text" id="priceAdult" class = "inputBox" name="adultPrice" readonly></span>
+     <br>
+     Number of Child Tickets:<input type="text" id="numChild" name="childTicket" class = "inputBox" readonly>
+     <span class= "priceField">
+     Child Ticket Price: <input type="text" id="priceChild" name="childPrice" class = "inputBox" readonly>
+     </span>
+                            <br>
+  Total Price:<br> <input type="text" id="totalPrice" name="priceTotal" class = "inputBox" readonly>
+ </fieldset>
+</form>
+</body>
+</html>

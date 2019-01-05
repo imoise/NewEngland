@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<header>
+    <h1>New England Attractions
+    <img src="static/GroupProjectLogo2.png" alt="Group Logo" id = "logo">
+    </h1>
+</header>
+    <!--Start of Navigation Bar-->
+    <nav>
+        <span class = "navButton" class = "active"><a href="Home" class="navlinks">Home</a></span>
+        <span class = "navButton"><a href="Historical" class="navlinks">Historical</a></span>
+        <span class = "navButton"><a href="Cultural" class="navlinks">Cultural</a></span>
+        <span class = "navButton"><a href="Sports" class="navlinks">Sports</a></span>
+        <span class = "navButton"><a href="Educational"class="navlinks" >Education</a></span>
+        <span class = "navButton"><a href="Tourism" class="navlinks">Tourism</a></span>
+        <span id = "lastNav"  class = "navButton"><a href="Contact" class="navlinks">Contact</a></span>
+    </nav>
+    <!--Container containing body elements-->
+    <div class="CulturalAttractions">
+    <body>
+    <h1><marquee behavior ="scroll" direction="left" scrollamount="15">Educational Places of New England</marquee></h1>
+      <div class="CulturalBody">
+              <h2 class = "Title">Connecticut</h2>
+                <img src="static/ctyale.jpg" alt="Yale" id = "yale" class="eclass">
+                <div class="buttons">
+					<button id="Connecticut Button" class = "eduButton" onclick="ctFunction();">Connecticut Quiz</button>
+                <div class="showresult">
+               
+              <p class = "paragraph">Located in New Haven, Yale University is one of the widely known universities the world</p>
+              <h2 class = "Title">Massachusetts</h2>
+           <img src="static/harvard.jpg" alt="International" id = "international" class="eclass">
+              <div id="buttons">
+              <button id="Massachusetts Button" class = "eduButton" onclick="maFunction()">Massachusetts Quiz</button>
+              <div class="showresult">
+              <p class = "paragraph"> Harvard University, a well known educational institute is located in Massachusetts</p>
+              <h2 class = "Title">New Hampshire</h2>
+           <img src="static/newhampshirecollege.jpg" alt="Hampshire" id = "newhampshire" class="eclass">
+              <div class="buttons">
+                <button id="New Hampshire Button" class = "eduButton" onclick = "nhFunction();">New Hampshire Quiz</button>
+                <div class="showresult">
+              <p class = "paragraph">Near the Connecticut River, Darmouth College is home to a well-known medical school</p>
+            <h2 class = "Title">Maine</h2>
+           <img src="static/bowdoinmaine.jpg" alt="BowDoinMaine" id = "bowdoinmaine" class="eclass">
+                <div class="buttons">
+                <button id="Maine Button" class = "eduButton" onclick = "meFunction();">Maine Quiz</button>
+                <div class="showresult">
+              <p class = "paragraph">Home to several famous alumni poets such as Wadsworth Longfellow and Robert E. Peary is Maine's Bowdoin College</p>
+         <h2 class = "Title">Rhode Island</h2>
+          <img src="static/brownuniversityrhodeisland.jpg" alt="brownuniversity" id = "brownuniversity" class="eclass">
+             <div class="buttons">
+              <button id="Rhode Island Button" class = "eduButton" onclick="riFunction();">Rhode Island Quiz</button>
+              <div class="showresult">
+
+              <p class = "paragraph">Founded in 1764, Brown University is known for it's medical and engineering programs</p>
+              <h2 class = "Title">Vermont</h2>
+            <img src="static/vmiddleberry.jpg" alt="middleberry" id = "middleberryuniversity" class="eclass">
+            <div class="buttons">
+                <button id="Vermont Button" class = "eduButton" onclick="vtFunction();">Vermont Quiz</button>
+                <div class="showresult">
+              <p class = "paragraph">MiddleBerry is a well known college located in Vermont that specializes in scientific research and mathematical</p>
+        </div>
+		<script src = "static/quiz.js"> 
+	</script>
+    </body>
+        <!--Footer area-->
+ <footer style="text-align:center">
+ <small>
+    &copy; April Mcbroom, Isaac Moise, Nicholas Cicco
+    </small>
+    </footer>
+</html>

@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Maine Quiz</title>
+	<meta charset="UTF-8">    
+    <link rel="stylesheet" type="text/css" href="static/newenglandstyle.css">
+</head>
+<body>
+	<h1 class = "Title">Maine Quiz</h1>
+	<div>
+		<p>
+			<b>Which of the following is the capital of Maine?</b>
+		</p>
+		<input type='radio' id='capital1' name='MEN1' value='Augusta' onclick = "meAnswer1();"><label for = 'capital1'>Augusta</label>
+		<br>
+		<input type='radio' id='capital2' name='MEN1' value='Portland' onclick = "meAnswer1();"><label for = 'capital2'>Portland</label>
+		<br>
+		<input type='radio' id='capital3' name='MEN1' value='Brunswick' onclick = "meAnswer1();"><label for = 'capital3'>Brunswick</label>
+		<div id = 'meNotice1' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	
+	<div>
+		<p>
+			<b>Which of the following is Maine's state animal?</b>
+		</p>
+		<input type='radio' id='animal1' name='MEN2' value='Muskrat' onclick = "meAnswer2();"><label for = 'animal1'>Muskrat</label>
+		<br>
+		<input type='radio' id='animal2' name='MEN2' value='Moose' onclick = "meAnswer2();"><label for = 'animal2'>Moose</label>
+		<br>
+		<input type='radio' id='animal3' name='MEN2' value='Black Bear' onclick = "meAnswer2();"><label for = 'animal3'>Black Bear</label>
+		<div id = 'meNotice2' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<div>
+		<p>
+			<b>Which of the following is Maine's state tree?</b>
+		</p>
+		<input type='radio' id='tree1' name='MEN3' value='Balsam Fir' onclick = "meAnswer3();"><label for = 'tree1'>Balsam Fir</label>
+		<br>
+		<input type='radio' id='tree2' name='MEN3' value='Eastern White Pine' onclick = "meAnswer3();"><label for = 'tree2'>Eastern White Pine</label>
+		<br>
+		<input type='radio' id='tree3' name='MEN3' value='Red Pine' onclick = "meAnswer3();"><label for = 'tree3'>Red Pine</label>
+		<div id = 'meNotice3' style = 'width: 500px; height: 40px;'></div>
+	</div>
+	<script src = "static/quiz.js"> 
+	</script>	
+</body>
+</html> 
