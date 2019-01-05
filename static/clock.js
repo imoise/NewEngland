@@ -1,8 +1,10 @@
+//Instantiate variable "zoneE" to store AM or Pm for eastern clock
 var zoneE;
+//Instantiate variable "zoneE" to store AM or Pm for pacific clock
 var zoneP;
 
  function clock(){
-     /*Declares date function and variables for hours, minutes, and seconds  */ 
+/*Declares date function and variables for hours, minutes, and seconds  */ 
     var date = new Date();
         
     var hours = date.getHours();
@@ -10,8 +12,9 @@ var zoneP;
     var minutes = date.getMinutes();
         
     var seconds = date.getSeconds();    
-     /*Makes a variable with the string PM to represent the time of day*/
-    if(hours == 0 || hours == 24)
+/*Makes a variable with the string PM to represent the time of day*/
+    //Prevents clock from showing a 24 or 0 for military time
+	if(hours == 0 || hours == 24)
     {
         hours = 12;
 		 zoneE = "AM"; 
@@ -52,12 +55,16 @@ clock();
     var minutes = date.getMinutes();
        
     var seconds = date.getSeconds(); 
-
-    if(hours == 0 || hours == 24)
+	if(hours < 0){
+			 hours = hours + 12;
+			 zoneP ="PM";
+		} 
+    else if(hours == 0 || hours == 24)
     {
         hours = 12;
 		zoneP = "AM"; 
     }
+	
 	else if (hours < 12){
 		 zoneP = "AM";
 	}
@@ -66,9 +73,9 @@ clock();
 	}
     else if(hours > 12){
 		 hours = hours - 12;
-		 //flipE()
 		 zoneP ="PM";
-	}  	
+	}
+	 	
     
     
         /*If the number of minutes is less than 10, then the digit 0 will be put in front of the number of minutes*/
