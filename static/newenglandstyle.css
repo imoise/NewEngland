@@ -1,0 +1,634 @@
+/* Universal Settings*/
+h1{color: blue;
+text-align:center;
+}
+figcaption{
+	text-align:center;
+	font-size: 17px
+}
+/*H2 text constraint*/
+h2{color: blue;
+text-align:center;
+}
+/*Logo Height Constraint*/
+#logo{
+     overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    height: 70px;
+    width: 70px;
+}
+    /*Logo Animation Set*/
+#logo:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+nav{
+    background-color: navy;
+    text-align: center;
+    
+}
+.navButton{
+   
+    text-align: center;
+    padding: 16px 16px;
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+    border-left:1px solid white;
+	margin-left: -0.3%;
+
+}
+#lastNav{
+    border-right:1px solid white;
+}
+.navlinks{
+ color: white;
+text-decoration: none;
+    
+}
+/*Activates the navigation bar*/
+.navButton:hover:not(.active){
+    background-color: gold;
+}
+/*Aligns Images*/
+.ImageCenter{
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height: 300px;
+    width:500px;
+	border:3px inset black;
+    
+}
+/*Cultural Page*/
+.eclass{
+    display: block;
+   margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    
+}
+    #SignUp{
+        margin: 0 auto;
+    }
+
+#message{
+    margin: 0 auto;
+}
+    
+.imagetext{
+    position:relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.imagetext .textoverlay{
+    position: absolute;
+    bottom:0;
+	right: 165px;
+    background: rgba(0,0,0);
+    background: rgba(0,0,0,0.5);
+    color:#f1f1f1;
+    width: 60%;
+    padding: 10px;
+}
+
+/*Sports Page*/
+.unh{
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+
+.right{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 300px;
+    width: 500px;
+    border:3px inset black;
+}
+.ri{
+    height: 300px;
+    width: 500px; 
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+.vermont{
+    height: 300px;
+    width: 500px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+.portland{
+    height: 300px;
+    width: 500px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.bball{
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#football {
+    height: 300px;
+    width: 400px;
+}
+#uconn{
+    height: 300px;
+    width: 400px;
+    float:center;
+    padding-right : 5px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#foot{
+    text-align:center;
+    font-size: 24px;
+    {border-style: solid;}
+}
+/*nav{
+    background-color: navy;
+    text-align: center;
+    
+}*/
+/*.navButton{
+   
+    text-align: center;
+    padding: 16px 16px;
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+    border-left:1px solid white;
+    
+    
+}*/
+#naismith{
+    font-size: 16px;
+    text-align: center;
+    color:blue;
+    
+    background-color: white;
+    margin:3%;
+    padding : 2%;
+	border: 3px inset black;
+}
+#mountain{
+    font-size: 16px;
+    text-align: center;
+    color:blue;
+    
+    background-color: white;
+    margin:3%;
+    padding : 2%;
+	border: 3px inset black;border: 3px inset black;
+}
+
+#port{
+    font-size: 16px;
+    text-align: center;
+    color:blue;
+    
+    background-color: white;
+    margin:3%;
+    padding : 2%;
+	border: 3px inset black;
+} 
+
+#wild{
+    font-size: 16px;
+    text-align: center;
+    color:blue;
+    
+    background-color: white;
+    margin:3%;
+    padding : 2%;
+	border: 3px inset black;
+}
+
+
+#lastNav{
+    border-right:1px solid white;
+}
+.navlinks{
+ color: white;
+text-decoration: none;
+    
+}
+.active{
+    background-color: teal;
+}
+
+.navButton:hover:not(.active){
+    background-color: gold;
+}
+
+#patriots{
+    font-size: 16px;
+    text-align: center;
+    color:blue;
+    
+    background-color: white;
+    margin:3%;
+        padding : 2%;
+}
+#u{
+    font-size: 16px;
+    text-align: center;
+    color:blue;
+    
+    background-color: white;
+    margin:3%;
+    padding : 2%;
+	border: 3px inset black;
+}
+#ct{
+  text-align:center;
+    font-size: 26px ;
+    
+}
+
+#ne{
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+/*Page Details*/
+.NewsPaperInput{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.ContainingBody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.align {
+  float: left;
+    height: 200px;
+  width: 33.33%;
+  padding: 0px;
+  
+    
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Page Details*/
+.pats{
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+.right{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 300px;
+    width: 500px;
+    border:3px inset black;
+}
+.ri{
+    height: 300px;
+    width: 500px; 
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+.vermont{
+    height: 300px;
+    width: 500px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+.portland{
+    height: 300px;
+    width: 500px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px inset black;
+}
+.bball{
+    height: 300px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#football {
+    height: 300px;
+    width: 400px;
+}
+#uconn{
+    height: 300px;
+    width: 400px;
+    float:center;
+    padding-right : 5px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+nav{
+    background-color: navy;
+    text-align: center;
+    
+}
+.navButton{
+   
+    text-align: center;
+    padding: 16px 16px;
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+    border-left:1px solid white;
+    
+    
+}
+
+#lastNav{
+    border-right:1px solid white;
+}
+.navlinks{
+ color: white;
+text-decoration: none;
+    
+}
+.active{
+    background-color: teal;
+}
+
+.navButton:hover:not(.active){
+    background-color: gold;
+}
+
+
+
+/*Details*/
+.Title{
+	text-align: center;
+	border: 3px inset black;
+background-color: rgb(212,175,55);
+}
+.paragraph{
+	text-align:center;
+	padding: 2%;
+	margin: 3%;
+	border: 3px inset black;
+	background-color: white;
+	font-size: 16px;
+}	
+
+/*Historical Page*/
+.historicalTitle{
+	text-align: center;
+	border: 3px inset black;
+	background-color: rgb(212,175,55);
+	
+}
+.historicalSubTitle{
+	text-align:center;
+	
+}
+
+.historicalImages{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	border: 3px inset black;
+	height: 500px;
+}
+.historicalBlockInfo{
+	text-align:center;
+	padding: 2%;
+	margin: 3%;
+	border: 3px inset black;
+	background-color: white;
+	font-size: 16px;
+}
+/*Universal Page*/
+body{
+	background-color: lightblue; 
+}
+/*Details*/
+.colorchange{
+	text-align:center;
+	margin: 10px;
+	text-indent: 20px;
+}
+/* <!--		Isaac Changes		 --> */
+.dropbtn {
+    background-color: rgb(30,144,255);
+    color: white;
+    padding: 4px 6px;
+    font-size: 16px;
+    border: none;
+	border-radius: 12px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.inputField{
+	padding:7px;
+}
+.eduButton{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	font-size: 18px;
+	border-radius: 6px;
+	border: 3px inset black;
+	background-color: rgb(65,105,225);
+	padding: 8px 12px;
+	color: rgb(225,225,225);
+	
+}
+.eduButton:hover{
+	background-color: rgb(35,75,195);
+	color: 	rgb(218,165,32);
+	cursor: pointer;
+	
+}
+.eduButton:active{
+  background-color: rgb(35,75,195);
+  color: rgb(218,165,32);
+  cursor: pointer;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+/*Clock CSS */
+.eclock{
+
+    height: 50px ;
+
+    width: 160px;
+
+    color: lightblue;
+
+    background-color: black;
+
+    display:inline-block;
+
+    position: absolute;
+
+    font-size: 30px;
+
+    border: 3px solid gold;
+
+    padding-left: 10px;
+
+     padding-right: 10px ;
+
+    margin-left: 25%;
+
+    margin-top:-1.5%;
+
+   
+
+}
+
+.pclock{
+
+    height: 50px ;
+
+    width: 160px;
+
+    color: lightblue;
+
+    background-color: black;
+
+    border: 3px solid gold;
+
+    display:inline-block;
+
+    position: absolute;
+
+    font-size: 29px;
+
+    margin-left: 50%;
+
+    margin-top:-3.3%;
+
+    padding-left: 1px;
+
+     padding-right: 10px ;
+
+  
+
+    
+
+}
+
+#pst{
+
+    position: absolute;
+
+        margin-left: 50%;
+
+    margin-top:-5.5%;
+
+}
+
+#est{
+
+   text-align: center;
+
+    margin-left: -25%;
+
+    margin-top: 1%
+
+}
+ 
+
+
+
