@@ -53,7 +53,7 @@ var logUser = "";
 		})
 	//When a get request is called to http://localhost:3000/Sports it redirects user to Sports page which is HTML file 'Sports.html'
 		app.get('/Sports',function(req,res){
-			res.sendFile(path.join(__dirname+'/Sports.html')); 
+			res.sendFile(path.join(__dirname+'/sports.html')); 
 		})
 	//When a get request is called to http://localhost:3000/Educational it redirects user to Educational page which is HTML file 'Educational.html'
 		app.get('/Educational',function(req,res){
